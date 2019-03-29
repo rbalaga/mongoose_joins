@@ -11,16 +11,7 @@ var employeeSchema = new Schema({
 	name:{
 		type:String,
 		required:true
-	},
-	details : {
-		type: Schema.Types.ObjectId,
-		ref: 'Empdetails',
-		unique:true
-	},
-	projects:[{
-		type:Schema.Types.ObjectId,
-		ref:'Project'
-	 }]
+	}
 },{
 	timestamps:true
 });

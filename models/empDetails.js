@@ -14,6 +14,10 @@ var DetailsSchema = new Schema({
 		type: Number,
 		required: true,
 		unique:true
+	},
+	empId:{
+		type: Schema.Types.ObjectId,
+		ref:'Employee'
 	}
 }, {
 	timestamps: true
